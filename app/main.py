@@ -6,7 +6,7 @@ def calculate_animal_age(age: int, step: int) -> int:
     return 2 + (age - 24) // step
 
 
-def get_human_age(cat_age: int, dog_age: int) -> list:
+def get_human_age(cat_age: int, dog_age: int) -> list[int]:
     return [
         calculate_animal_age(cat_age, 4),
         calculate_animal_age(dog_age, 5)
