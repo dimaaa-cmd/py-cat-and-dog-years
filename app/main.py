@@ -1,4 +1,6 @@
 def calculate_animal_age(age: int, step: int) -> int:
+    if not isinstance(age, int):
+        raise TypeError("Age must be an integer")
     if age < 15:
         return 0
     if age < 24:
